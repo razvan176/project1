@@ -1,0 +1,15 @@
+<!-- index.html -->
+{% extends 'base.html' %}
+
+{% block block_content %}
+    {% comment %} <div class="col-md-2">
+    {% include 'date.html' %}
+
+    {% include 'sets.html' %}
+    </div> {% endcomment %}
+
+    <div class="col-12 full-width">
+        {% include 'raport_sets.html' %}
+    </div>
+
+{% endblock %}

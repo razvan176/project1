@@ -1,0 +1,35 @@
+{% block raport_sets %}
+<!-- NU MERGE ADVANCE SEARCH-->
+<h1 class="h1">Raports</h1>
+
+<div id="new-table">      
+    <table id="tableinbound" 
+    data-pagination="true" 
+    data-search="true"
+    data-show-search-button="true"
+    data-id-table="advancedTable"
+    data-show-fullscreen="true">
+    <thead>
+        <tr>
+            <th data-field="set_name" data-sortable="true">Set</th>
+            <th data-field="date" data-sortable="true">Date</th>
+            <th data-field="hour" data-sortable="true">Hour</th>
+            <th data-field="number_send" data-sortable="true">Number Emails Send</th>
+            <th data-field="ip" data-sortable="true">IP</th>
+            <th data-field="id_mint" data-sortable="true">ID Mint</th>
+        </tr>
+    </thead>
+    </table>
+</div>
+
+<div id="table-container"></div>
+
+{% csrf_token %}
+<script>
+    $(document).ready(function(){
+        var setsData = JSON.parse('{{ sets|safe }}');
+        $('#tableinbound').bootstrapTable({data: setsData});
+    });
+</script>    
+
+{% endblock %}

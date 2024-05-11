@@ -1,0 +1,58 @@
+{% comment %} {% block block_date %}
+
+
+<input type="text" name="daterange" value="{{ last_date|date:'m/d/Y' }} - {{ last_date|date:'m/d/Y' }}" />
+
+<script>
+
+  function formatDate(date) {
+    var year = date.getFullYear();
+    var month = (date.getMonth() + 1).toString().padStart(2, '0');
+    var day = date.getDate().toString().padStart(2, '0');
+    return year + '-' + month + '-' + day;
+}
+
+function getDateRange() {
+    var dateRangeInput = document.querySelector('input[name="daterange"]');
+    var dateRangeValue = dateRangeInput.value;
+    var dates = dateRangeValue.split(' - ');
+    var startDate = new Date(dates[0]);
+    var endDate = new Date(dates[1]);
+
+    // Convert dates to 'YYYY-MM-DD' format
+    var formattedStartDate = formatDate(startDate);
+    var formattedEndDate = formatDate(endDate);
+
+    // Return the start_date and last_date as formatted strings
+    return {
+        start_date: formattedStartDate,
+        last_date: formattedEndDate
+    };
+}
+
+
+$(function() {
+  // Function to handle date range change
+  function handleDateRangeChange() {
+      // Call fetchData() here
+      fetchData();
+  }
+
+  // Initialize the date range picker
+  $('input[name="daterange"]').daterangepicker({
+      opens: 'left',
+      minDate: '{{ first_date|date:"m-d-Y" }}',
+      maxDate: '{{ last_date|date:"m-d-Y" }}'
+  });
+
+  // Trigger fetchData() when the value of the input field changes
+  $('input[name="daterange"]').on('change', handleDateRangeChange);
+
+  // Initial fetchData() call
+  fetchData();
+});
+
+</script>
+
+  
+{% endblock %} {% endcomment %}

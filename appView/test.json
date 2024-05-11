@@ -1,0 +1,358 @@
+{
+    "combinationsStats": {},
+    "pmtaLogsErrCount": {
+        "errCountPerCampaignId": {
+            "663b74b75956e13053436243": 1843,
+            "663b74b25956e1305342d21a": 1827
+        },
+        "errCountPerCombinationId": {}
+    },
+    "campaigns": [
+        {
+            "archived": false,
+            "hidden": false,
+            "priority": 0,
+            "id": "663b74b75956e13053436243",
+            "type": "CAMPAIGN",
+            "creationTime": 1715172535234,
+            "limit": null,
+            "suffix": "vingaria.com",
+            "headers": [
+                {
+                    "value": "1.0",
+                    "key": "MIME-Version"
+                },
+                {
+                    "value": "\"%FRIENDLY%\" <%FROM%>",
+                    "key": "From"
+                },
+                {
+                    "value": "%TO%",
+                    "key": "To"
+                },
+                {
+                    "value": "%DATE%",
+                    "key": "Date"
+                },
+                {
+                    "value": "%SUBJECT%",
+                    "key": "Subject"
+                },
+                {
+                    "value": "\"%FRIENDLY%\" <%FROM%>",
+                    "key": "Reply-To"
+                },
+                {
+                    "value": "text/html; charset=\"utf-8\"",
+                    "key": "Content-Type"
+                },
+                {
+                    "value": "quoted-printable",
+                    "key": "Content-Transfer-Encoding"
+                },
+                {
+                    "value": "<%NUMBERS7-7%.%LETTERS_LOWER2-2%.%LETTERS_LOWER5-5%>",
+                    "key": "List-ID"
+                },
+                {
+                    "value": "<%UNSUBLINK%>",
+                    "key": "List-Unsubscribe"
+                },
+                {
+                    "value": "List-Unsubscribe=One-Click",
+                    "key": "List-Unsubscribe-Post"
+                },
+                {
+                    "value": "<%MESSAGEID%@%FROMDOMAIN%>",
+                    "key": "X-MSFBL"
+                },
+                {
+                    "value": "<%BASE64_5-8%@%LETTERS_UPPER1-4%.%LETTERS_LOWER1-3%.%NUMBERS1-3%.%LETTERS_LOWER1-8%.%FROMDOMAIN%>",
+                    "key": "Message-ID"
+                }
+            ],
+            "status": "DONE",
+            "user": "yahoo_razvan@evowise.com",
+            "recipients": 36762,
+            "offerIds": [
+                "8238",
+                "99999"
+            ],
+            "unsubscribeSources": [],
+            "tags": [
+                "63d903d3f0acddf000f60cd9"
+            ],
+            "nextRefreshTime": 0,
+            "lastScheduledStartTime": 0,
+            "lastExecutionStartTime": 1715172539815,
+            "scheduledStartTime": 0,
+            "metadata": {
+                "lists": [
+                    {
+                        "listId": "65d753851c81b4566f7f6722",
+                        "listName": "listabani_cleaned_doar_yahoo_50k_p0047"
+                    }
+                ],
+                "pmtaEndpointName": "warmup_am",
+                "tags": {
+                    "setName": "vingaria.com",
+                    "headerTemplateName": "header_t1",
+                    "draftName": "8238-162617-2"
+                }
+            },
+            "subjects": [
+                "Don\u202d\u2019t\u2002Wor\ufeffry\u2005Abo\u202aut Unex\ufeffpe\u200cc\u200cted\u2005C\u202dosts\u2002\u2013\u2005Ge\u200ct\u2005a V\u202aanguar\ufeffd H\u200com\u200ce\u2004W\u200car\u202dranty\u2005t\u202do C\ufeffover\u2005Th\u200cem!"
+            ],
+            "friendlyFroms": [
+                "Vangua\u202ar\u202dd Ho\ufeffm\u200ce Wa\u202drrant\u202ay\u2005A\u200cd\u2004P\u202aa\u202artner"
+            ],
+            "lastUpdateTime": 1715182193229,
+            "pmtaEndpointDetails": {
+                "port": 9025,
+                "host": "89.44.100.51",
+                "password": "",
+                "username": "",
+                "pmtaThreadsLimit": 40
+            },
+            "htmls": [
+                {
+                    "html": "",
+                    "htmlTemplateId": null
+                }
+            ],
+            "froms": [
+                "news"
+            ],
+            "replyTo": "",
+            "mailFrom": "",
+            "recipientCountPerMessage": 1,
+            "linksType": "HIDDEN",
+            "linksPrefix": "",
+            "linksSuffix": "",
+            "combinationId": null,
+            "eliminationThresholdRate": 0,
+            "omitLinkPadding": false,
+            "openRateLookback": 0,
+            "firstAdaptivePhase": true,
+            "prepareType": null,
+            "segmentationType": null,
+            "slicingStrategy": null,
+            "recipientSourceIds": null,
+            "externallyManaged": false,
+            "lockForPreparingUntil": 1715173135234,
+            "configurationSet": "Tracking",
+            "promotionMetricType": null,
+            "campaignPlaceholders": [
+                {
+                    "level": "MESSAGE_LEVEL",
+                    "placeholder": "%X-MINT-TAG-MESSAGE%",
+                    "rawValue": "%LOREM_IPSUM_HTML10-20%",
+                    "resolvedValue": null
+                }
+            ],
+            "combinations": {},
+            "sendingProfile": [],
+            "promotionThresholds": [],
+            "rejection": null,
+            "submitted": 0,
+            "suppressionReport": {
+                "complianceUnsubsGlobal": 0,
+                "complianceUnsubsCategory": 3802,
+                "complianceAbusesGlobal": 213,
+                "complianceAbusesCategory": 4014,
+                "complianceAbusesOffer": 902,
+                "whitelisted": 0,
+                "globalSuppressed": 1047,
+                "doNotMailSuppressed": 700,
+                "accountSuppressed": 16,
+                "offerSuppressed": 2423,
+                "unsubscribeSourceSuppressed": 0
+            },
+            "rootSuppressionReport": null,
+            "error": null,
+            "vmta": "vingaria.com",
+            "dispatchAttempts": 0,
+            "salesTrackingType": null,
+            "delivered": 36753,
+            "opened": 1643,
+            "clicked": 0,
+            "unsubscribed": 9,
+            "abused": 5,
+            "bounced": 9,
+            "rootCampaignId": null
+        },
+        {
+            "archived": false,
+            "hidden": false,
+            "priority": 0,
+            "id": "663b74b25956e1305342d21a",
+            "type": "CAMPAIGN",
+            "creationTime": 1715172530794,
+            "limit": null,
+            "suffix": "vingaria.com",
+            "headers": [
+                {
+                    "value": "1.0",
+                    "key": "MIME-Version"
+                },
+                {
+                    "value": "\"%FRIENDLY%\" <%FROM%>",
+                    "key": "From"
+                },
+                {
+                    "value": "%TO%",
+                    "key": "To"
+                },
+                {
+                    "value": "%DATE%",
+                    "key": "Date"
+                },
+                {
+                    "value": "%SUBJECT%",
+                    "key": "Subject"
+                },
+                {
+                    "value": "\"%FRIENDLY%\" <%FROM%>",
+                    "key": "Reply-To"
+                },
+                {
+                    "value": "text/html; charset=\"utf-8\"",
+                    "key": "Content-Type"
+                },
+                {
+                    "value": "quoted-printable",
+                    "key": "Content-Transfer-Encoding"
+                },
+                {
+                    "value": "<%NUMBERS7-7%.%LETTERS_LOWER2-2%.%LETTERS_LOWER5-5%>",
+                    "key": "List-ID"
+                },
+                {
+                    "value": "<%UNSUBLINK%>",
+                    "key": "List-Unsubscribe"
+                },
+                {
+                    "value": "List-Unsubscribe=One-Click",
+                    "key": "List-Unsubscribe-Post"
+                },
+                {
+                    "value": "<%MESSAGEID%@%FROMDOMAIN%>",
+                    "key": "X-MSFBL"
+                },
+                {
+                    "value": "<%BASE64_5-8%@%LETTERS_UPPER1-4%.%LETTERS_LOWER1-3%.%NUMBERS1-3%.%LETTERS_LOWER1-8%.%FROMDOMAIN%>",
+                    "key": "Message-ID"
+                }
+            ],
+            "status": "DONE",
+            "user": "yahoo_razvan@evowise.com",
+            "recipients": 36882,
+            "offerIds": [
+                "8238",
+                "99999"
+            ],
+            "unsubscribeSources": [],
+            "tags": [
+                "63d903d3f0acddf000f60cd9"
+            ],
+            "nextRefreshTime": 0,
+            "lastScheduledStartTime": 0,
+            "lastExecutionStartTime": 1715172535031,
+            "scheduledStartTime": 0,
+            "metadata": {
+                "lists": [
+                    {
+                        "listId": "65d7537d7416f306b0257fc4",
+                        "listName": "listabani_cleaned_doar_yahoo_50k_p0046"
+                    }
+                ],
+                "pmtaEndpointName": "warmup_am",
+                "tags": {
+                    "setName": "vingaria.com",
+                    "headerTemplateName": "header_t1",
+                    "draftName": "8238-162617-2"
+                }
+            },
+            "subjects": [
+                "Don\u202d\u2019t\u2002Wor\ufeffry\u2005Abo\u202aut Unex\ufeffpe\u200cc\u200cted\u2005C\u202dosts\u2002\u2013\u2005Ge\u200ct\u2005a V\u202aanguar\ufeffd H\u200com\u200ce\u2004W\u200car\u202dranty\u2005t\u202do C\ufeffover\u2005Th\u200cem!"
+            ],
+            "friendlyFroms": [
+                "Vangua\u202ar\u202dd Ho\ufeffm\u200ce Wa\u202drrant\u202ay\u2005A\u200cd\u2004P\u202aa\u202artner"
+            ],
+            "lastUpdateTime": 1715181586939,
+            "pmtaEndpointDetails": {
+                "port": 9025,
+                "host": "89.44.100.51",
+                "password": "",
+                "username": "",
+                "pmtaThreadsLimit": 40
+            },
+            "htmls": [
+                {
+                    "html": "",
+                    "htmlTemplateId": null
+                }
+            ],
+            "froms": [
+                "news"
+            ],
+            "replyTo": "",
+            "mailFrom": "",
+            "recipientCountPerMessage": 1,
+            "linksType": "HIDDEN",
+            "linksPrefix": "",
+            "linksSuffix": "",
+            "combinationId": null,
+            "eliminationThresholdRate": 0,
+            "omitLinkPadding": false,
+            "openRateLookback": 0,
+            "firstAdaptivePhase": true,
+            "prepareType": null,
+            "segmentationType": null,
+            "slicingStrategy": null,
+            "recipientSourceIds": null,
+            "externallyManaged": false,
+            "lockForPreparingUntil": 1715173130794,
+            "configurationSet": "Tracking",
+            "promotionMetricType": null,
+            "campaignPlaceholders": [
+                {
+                    "level": "MESSAGE_LEVEL",
+                    "placeholder": "%X-MINT-TAG-MESSAGE%",
+                    "rawValue": "%LOREM_IPSUM_HTML10-20%",
+                    "resolvedValue": null
+                }
+            ],
+            "combinations": {},
+            "sendingProfile": [],
+            "promotionThresholds": [],
+            "rejection": null,
+            "submitted": 0,
+            "suppressionReport": {
+                "complianceUnsubsGlobal": 0,
+                "complianceUnsubsCategory": 3643,
+                "complianceAbusesGlobal": 198,
+                "complianceAbusesCategory": 4024,
+                "complianceAbusesOffer": 894,
+                "whitelisted": 0,
+                "globalSuppressed": 1061,
+                "doNotMailSuppressed": 678,
+                "accountSuppressed": 40,
+                "offerSuppressed": 2480,
+                "unsubscribeSourceSuppressed": 0
+            },
+            "rootSuppressionReport": null,
+            "error": null,
+            "vmta": "vingaria.com",
+            "dispatchAttempts": 0,
+            "salesTrackingType": null,
+            "delivered": 36873,
+            "opened": 2236,
+            "clicked": 3,
+            "unsubscribed": 16,
+            "abused": 11,
+            "bounced": 9,
+            "rootCampaignId": null
+        }
+    ]
+}

@@ -1,0 +1,35 @@
+{% comment %} {% block block_sets %}
+
+    {% if sets %}
+        <div class="list-group list-sets">
+            {% for set in sets %}
+                <button type="button" class="list-group-item list-group-item-action{% if forloop.first %} {% endif %}">
+                    {{ set.set_name }}
+                </button>
+            {% endfor %}
+        </div>
+    {% else %}
+        <p>No sets</p>
+    {% endif %}
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            document.querySelectorAll('.list-group-item').forEach(function(listItem) {
+                listItem.addEventListener('click', function() {
+                    this.classList.toggle('active');
+                    fetchData();
+
+                });
+            });
+        });
+        function getActiveButtons() {
+            var activeButtons = [];
+            document.querySelectorAll('.list-group-item').forEach(function(button) {
+                if (button.classList.contains('active')) {
+                    activeButtons.push(button.textContent.trim());
+                }
+            });
+            return activeButtons;
+        }
+    </script>
+    
+{% endblock %} {% endcomment %}
